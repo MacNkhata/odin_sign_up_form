@@ -11,8 +11,143 @@
 
 body {
   font-family: sans-serif;
+  height: 100vh;
+  background-color: #e5e7eb;
 }
 
 main {
   display: flex;
+  height: 100%;
+}
+
+.left {
+  background-image: url("../imgs/halie-west-25xggax4bSA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .logo {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100px;
+  padding: 16 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Norse";
+  color: white;
+}
+
+.left .logo h1 {
+  font-size: 3.5em;
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right .right-header-content {
+  padding: 0 40px;
+}
+
+.right-header-content p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.italicized {
+  font-style: italic;
+}
+
+.right .motivation {
+  margin-top: 32px;
+  margin-bottom: 60px;
+}
+
+.bg-white {
+  padding: 20px 40px;
+  background-color: #f5f4f4;
+}
+
+.bg-white p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.form_inputs {
+  display: flex;
+  gap: 40px;
+}
+
+.left_inputs div,
+.right_inputs div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 240px;
+  border: 1px solid #e5e7eb;
+  padding: 4px 8px;
+  font-family: inherit;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+label {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #84adff;
+  box-shadow: 2px 2px 4px #7e7e7e;
+}
+
+.password_input:invalid {
+  border: 1px solid #f94848;
+}
+
+.form_btns {
+  padding: 0 40px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form_btns button {
+  width: 200px;
+  padding: 12px 0;
+  background-color: #596d48;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#register_link {
+  font-weight: 400px;
+  background-color: transparent;
+}
+
+#register_link a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
 }
